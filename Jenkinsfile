@@ -62,7 +62,8 @@ spec:
     stage('Deploy Dev') {
       steps {
         container('kubectl') {
-          sh "kubectl --help"
+          sh "gcloud container clusters get-credentials kubernet --zone us-central1-c --project useful-cathode-334010"
+          sh "kubectl apply -f productcatalogservice.yaml"
         }
       }
     }
