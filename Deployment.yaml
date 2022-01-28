@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: product
-        image: gcr.io/my-project-600-339318/product:null.3
+        image: gcr.io/my-project-600-339318/product:null.4
         resources:
           limits:
             memory: "128Mi"
